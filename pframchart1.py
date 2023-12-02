@@ -77,7 +77,7 @@ if archivo_excel is not None:
                         if isinstance(hoja_correspondiente.cell(row=fila_seleccionada, column=col).value, (int, float))
                     ]
 
-                    años = [
+                    years = [
                         hoja_correspondiente.cell(row=240, column=col).value
                         for col in range(3, 52)
                         if isinstance(hoja_correspondiente.cell(row=240, column=col).value, (int, float))
@@ -85,7 +85,7 @@ if archivo_excel is not None:
 
                     indice = hoja_correspondiente.cell(row=fila_seleccionada, column=1).value
 
-                    ax.stackplot(años, valores, labels=[f"{proyecto_nombre} - {indice}"], alpha=0.6)
+                    ax.stackplot(years, valores, labels=[f"{proyecto_nombre} - {indice}"], alpha=0.6)
 
             ax.set_xlabel("Year")
             ax.set_ylabel("Value")
