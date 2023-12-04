@@ -17,7 +17,7 @@ st.markdown("""
 
 st.title("Pfram Chart")
 
-st.markdown(f"[Download the sample file](https://drive.google.com/uc?id=1Yu7gZh3IWAgM8j7A3GtbMZTJ0NFKuQXK)")
+st.markdown(f"[Download the sample file here](https://drive.google.com/uc?id=1Yu7gZh3IWAgM8j7A3GtbMZTJ0NFKuQXK)")
 
 
 
@@ -97,7 +97,7 @@ if archivo_excel is not None:
 
             ax.set_xlabel("Year")
             ax.set_ylabel("Value")
-            ax.set_title(f"Compare projects - {datos_seleccionados}")
+            ax.set_title(f"Read or compare projects - {datos_seleccionados}")
             ax.legend(fontsize='small', loc='upper center', bbox_to_anchor=(0.5, -0.15), frameon=False)
 
             ax.spines['top'].set_visible(False)
