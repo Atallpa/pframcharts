@@ -17,7 +17,8 @@ st.markdown("""
 
 st.title("Pfram Chart")
 
-st.markdown(f"[Download the sample file {archivo_seleccionado}](/Sample1.xlsm)")
+st.markdown(f"[Download the sample file](https://drive.google.com/uc?id=1Yu7gZh3IWAgM8j7A3GtbMZTJ0NFKuQXK)")
+
 
 
 st.write('#')
