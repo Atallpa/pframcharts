@@ -19,7 +19,7 @@ st.title("Pfram Chart")
 
 
 # Archivos disponibles
-archivos = ["Sample1.xlsm", "Sample2.xlsm"]
+archivos = ["Sample1.xlsm"]
 archivo_seleccionado = st.selectbox("Select a sample:", archivos)
 
 # Crear enlace de descarga para el archivo seleccionado
