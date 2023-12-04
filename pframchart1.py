@@ -17,6 +17,18 @@ st.markdown("""
 
 st.title("Pfram Chart")
 
+
+# Archivos disponibles
+archivos = ["sample1.xlsm", "sample2.xlsm"]
+archivo_seleccionado = st.selectbox("Selecciona un archivo:", archivos)
+
+# Crear enlace de descarga para el archivo seleccionado
+with open(archivo_seleccionado, "w") as file:
+    file.write(f"Contenido de {archivo_seleccionado}")
+
+# Generar enlace de descarga
+st.markdown(f"[Descargar {archivo_seleccionado}](sandbox:/{archivo_seleccionado})")
+
 # Ruta del archivo Excel
 archivo_excel = st.file_uploader("Choose a PFRAM file with projects:", type=["xlsm"])
 
