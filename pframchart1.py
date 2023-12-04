@@ -97,6 +97,7 @@ if archivo_excel is not None:
 
             ax.set_xlabel("Year")
             ax.set_ylabel("Value")
+            ax.tick_params(axis='y', labelsize=10)
             ax.set_title(f"Read or compare projects - {datos_seleccionados}")
             ax.legend(fontsize='small', loc='upper center', bbox_to_anchor=(0.5, -0.15), frameon=False)
 
