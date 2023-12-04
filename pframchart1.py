@@ -29,6 +29,8 @@ with open(archivo_seleccionado, "w") as file:
 # Generar enlace de descarga
 st.markdown(f"[Download {archivo_seleccionado}](sandbox:/{archivo_seleccionado})")
 
+st.write('#')
+
 # Ruta del archivo Excel
 archivo_excel = st.file_uploader("Choose a PFRAM file with projects:", type=["xlsm"])
 
@@ -66,7 +68,9 @@ if archivo_excel is not None:
         }
 
         datos_seleccionados = st.selectbox("Select your data:", list(myDic.values()), index=None, placeholder="--Choose a parameter--")
-       
+        
+        st.write('#')
+        
         if proyecto_seleccionado:
             
             fig, ax = plt.subplots()
