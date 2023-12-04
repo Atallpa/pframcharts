@@ -27,7 +27,7 @@ with open(archivo_seleccionado, "w") as file:
     file.write(f"Content: {archivo_seleccionado}")
 
 # Generar enlace de descarga
-st.markdown(f"[Download {archivo_seleccionado}](sandbox:/Sample1.xlsm)")
+st.markdown(f"[Download {archivo_seleccionado}](/Sample1.xlsm)")
 
 st.write('#')
 
