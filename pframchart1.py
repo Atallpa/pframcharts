@@ -17,17 +17,8 @@ st.markdown("""
 
 st.title("Pfram Chart")
 
+st.markdown(f"[Download the sample file {archivo_seleccionado}](/Sample1.xlsm)")
 
-# Archivos disponibles
-archivos = ["Sample1.xlsm"]
-archivo_seleccionado = st.selectbox("Select a sample:", archivos)
-
-# Crear enlace de descarga para el archivo seleccionado
-with open(archivo_seleccionado, "w") as file:
-    file.write(f"Content: {archivo_seleccionado}")
-
-# Generar enlace de descarga
-st.markdown(f"[Download {archivo_seleccionado}](/Sample1.xlsm)")
 
 st.write('#')
 
