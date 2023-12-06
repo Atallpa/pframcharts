@@ -48,22 +48,21 @@ if archivo_excel is not None:
 
         proyecto_seleccionado = st.multiselect("Choose a project:", hojas_disponibles, placeholder="--Available projects--")
 
-        myDic = {
-            241: "Inflows",
-            242: "Outflows-Investment",
-            243: "Outflows-Operational",
-            244: "Outflows-Taxes",
-            245: "Outflows-Debt service",
-            246: "Outflows-Dividends",
-            247: "Equity"
-            # Agrega más claves y valores según sea necesario
-        }
-
-        datos_seleccionados = st.selectbox("Select your data:", list(myDic.values()), index=None, placeholder="--Choose a parameter--")
-        
         st.write('#')
         
         if proyecto_seleccionado:
+            myDic = {
+                241: "Inflows",
+                242: "Outflows-Investment",
+                243: "Outflows-Operational",
+                244: "Outflows-Taxes",
+                245: "Outflows-Debt service",
+                246: "Outflows-Dividends",
+                247: "Equity"
+                # Agrega más claves y valores según sea necesario
+            }
+
+            datos_seleccionados = st.selectbox("Select your data:", list(myDic.values()), index=None, placeholder="--Choose a parameter--")
             
             fig, ax = plt.subplots()
             plt.style.use("dark_background")
